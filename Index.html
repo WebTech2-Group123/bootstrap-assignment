@@ -4,17 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <title>Repunit Prime</title>
+    <meta name="description" content="Assignment 3 - Bootstrap">
+    <meta name="author" content="Group 123">
+
+    <title>Group 123</title>
 
     <!-- load CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <!--    <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/grayscale.css">
 
-    <!-- load Font -->
+    <!-- load Fonts -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- JS is loaded at the bottom of the page for better performances -->
 
@@ -23,13 +27,88 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     -->
+
+    <!-- support for IE9 -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- TASK 1 - navbar + search box + submenu -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <!-- logo/name -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-check"></i> <span class="light">Group</span> 123
+                </a>
+            </div>
+
+            <!-- right menu -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
+                    <!-- mission -->
+                    <li><a class="page-scroll" href="#mission">Mission</a></li>
+
+                    <!-- team - dropdown -->
+                    <li class="page-scroll" class="dropdown">
+                        <a href="#team" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Team <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#aron">Aron</a></li>
+                            <li><a href="#barbara">Barbara</a></li>
+                            <li><a href="#colin">Colin</a></li>
+                            <li><a href="#dolly">Dolly</a></li>
+                            <li><a href="#erika">Erika</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- search -->
+                    <li>
+                        <form class="navbar-form" role="search">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Lorem Ipsum</h1>
+                        <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- load JS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/grayscale.js"></script>
 
     <!-- decomment for production (CDN) -->
     <!--
