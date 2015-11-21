@@ -3,6 +3,6 @@
 Tasks:
  * [x] Side Navigation bar with “Search Box” and at least 1 sub menu
  * [ ] Tab Menus
- * [ ] Bootstrap Carousel
+ * [x] Bootstrap Carousel
  * [ ] Fixed footer
  * [ ] Plugins
