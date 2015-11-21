@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-assignment",
+  "version": "0.1.0",
+  "description": "Assignment 3 - Boostrap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebTech2-Group123/bootstrap-assignment.git"
+  },
+  "author": "Group 123",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebTech2-Group123/bootstrap-assignment/issues"
+  },
+  "homepage": "https://github.com/WebTech2-Group123/bootstrap-assignment#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
