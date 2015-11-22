@@ -4,5 +4,5 @@ Tasks:
  * [x] Side Navigation bar with “Search Box” and at least 1 sub menu
  * [ ] Tab Menus
  * [x] Bootstrap Carousel
- * [ ] Fixed footer
+ * [x] Fixed footer
  * [ ] Plugins
