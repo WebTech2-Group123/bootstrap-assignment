@@ -18,8 +18,8 @@
 
     <!-- load Fonts -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- JS is loaded at the bottom of the page for better performances -->
 
@@ -36,46 +36,6 @@
     <![endif]-->
 
 </head>
-
-<!-- Modal -->
-<div id="contactModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Contact us</h4>
-            </div>
-            <div class="modal-body">
-                <form role="form">
-                    <div class="form-group row">
-                        <label for="contact-name" class="col-sm-2 control-label">Name</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" id="contact-name" placeholder="First &amp; Last Name" type="text">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="contact-email" class="col-sm-2 control-label">Email</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" id="contact-email" placeholder="example@domain.com" type="email">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="contact-message" class="col-sm-2 control-label">Message</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="contact-message" rows="4"></textarea>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-default" data-dismiss="modal">Send</button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
@@ -158,12 +118,12 @@
         </div>
     </section>
 
-    <!-- Carousel Section -->
+    <!-- TASK 2 - Carousel Section -->
     <section class="container content-section text-center">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1">
 
-                <h2>Our users say...</h2>
+                <h2>Some people say...</h2>
 
                 <!-- Carousel -->
                 <div id="carousel" class="carousel slide" data-ride="carousel">
@@ -213,15 +173,63 @@
     </section>
 
     <!-- Footer -->
-    <nav class="navbar navbar-default navbar-fixed-bottom nav-footer">
-        <div class="container-fluid">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-          <ul class="nav navbar-nav">
-            <li><a id="contact-btn" data-toggle="modal" data-target="#contactModal">Contact</a></li>
-            <li><a href="#">Site Notice</a></li>
-          </ul>
-        </div><!-- /.container-fluid -->
-    </nav>
+    <footer class="navbar nav-footer navbar-fixed-bottom">
+        <div class="container">
+
+            <ul class="pull-right">
+                <li><a href="//github.com/WebTech2-Group123/bootstrap-assignment" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
+                <li><a href="//twitter.com" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a href="//facebook.com" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+                <li><a href="//plus.google.com" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+            </ul>
+
+            <ul class="pull-left">
+                <li><a id="contact-btn" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                <li><span>Copyright © 2015 - Lorem Ipsum</span></li>
+            </ul>
+
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="contactModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Contact us</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group row">
+                            <label for="contact-name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="contact-name" placeholder="First &amp; Last Name" type="text">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="contact-email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" id="contact-email" placeholder="example@domain.com" type="email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="contact-message" class="col-sm-2 control-label">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="contact-message" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" data-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- load JS -->
     <script src="js/jquery.min.js"></script>
