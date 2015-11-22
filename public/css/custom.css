@@ -40,6 +40,32 @@
     bottom: -40px;
 }
 
+.nav-footer{
+    background-color: #000000;
+}
+
+.nav-footer a{
+    color: #ffffff !important;
+}
+
+.nav-footer a:hover{
+    color: #777777 !important;
+}
+
+.nav-footer a:focus{
+    color: #ffffff!important;
+    background-color: #777777!important;
+    border:none !important;
+}
+
+.modal-header h4, .modal-body label{
+    color:#000000;
+}
+
+#contact-btn{
+    cursor: pointer;
+}
+
 @media screen and (max-width: 450px) {
     .item {
         height: 150px;
