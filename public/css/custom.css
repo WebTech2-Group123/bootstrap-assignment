@@ -56,6 +56,13 @@
     }
 }
 
+@media screen and (max-width: 365px) {
+    .item {
+        height: 190px;
+        line-height: 220px;
+    }
+}
+
 
 /* Footer */
 
