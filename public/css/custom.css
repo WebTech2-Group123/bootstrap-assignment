@@ -42,7 +42,7 @@
     content: ' -';
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .item {
         height: 150px;
         line-height: 180px;
@@ -70,12 +70,13 @@
     list-style-type: none;
     text-decoration: none;
     margin: 0;
+    padding: 0;
 }
 
 .nav-footer li {
     display: inline-block;
-    padding: 15px;
-    height: 60px;
+    padding: 8px;
+    height: 54px;
 }
 
 .nav-footer li > a,
@@ -85,9 +86,12 @@
     display: block;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
     .content-section:last-of-type {
         padding-bottom: 200px;
+    }
+    .nav-footer li {
+        height: 50px;
     }
     .nav-footer .container {
         text-align: center;
