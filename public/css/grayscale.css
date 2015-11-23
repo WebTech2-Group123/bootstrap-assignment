@@ -110,6 +110,16 @@ a:focus {
     background-color: transparent;
 }
 
+.navbar-custom .nav ul.dropdown-menu li a:hover {
+    color: rgba(0, 0, 0, .4);
+}
+
+.navbar-custom .nav ul.dropdown-menu li a:focus,
+.navbar-custom .nav ul.dropdown-menu li a:active,
+.navbar-custom .nav ul.dropdown-menu li.active a {
+    color: rgb(51, 51, 51);
+}
+
 .navbar-custom .nav li.active {
     outline: 0;
 }
