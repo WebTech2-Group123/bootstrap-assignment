@@ -1,3 +1,14 @@
+/* Carousel */
+
+.carousel-inner {
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
 .item {
     display: block;
     height: 130px;
@@ -31,42 +42,6 @@
     content: ' -';
 }
 
-.carousel-inner {
-    width: 70%;
-    margin: auto;
-}
-
-.carousel-indicators {
-    bottom: -40px;
-}
-
-.nav-footer {
-    background-color: #000000;
-}
-
-.nav-footer a {
-    color: #ffffff !important;
-}
-
-.nav-footer a:hover {
-    color: #777777 !important;
-}
-
-.nav-footer a:focus {
-    color: #ffffff!important;
-    background-color: #777777!important;
-    border: none !important;
-}
-
-.modal-header h4,
-.modal-body label {
-    color: #000000;
-}
-
-#contact-btn {
-    cursor: pointer;
-}
-
 @media screen and (max-width: 450px) {
     .item {
         height: 150px;
@@ -74,18 +49,19 @@
     }
 }
 
-@media (max-width: 650px) {
-    .content-section:last-of-type {
-        padding-bottom: 200px;
-    }
-    .nav-footer .container {
-        text-align: center;
-    }
-    .nav-footer .pull-left,
-    .nav-footer .pull-right {
-        padding: 0;
-        float: none !important;
-    }
+
+/* Footer */
+
+.nav-footer {
+    background-color: #000000;
+}
+
+.nav-footer a {
+    color: #ffffff;
+}
+
+.nav-footer a:hover {
+    color: rgba(255, 255, 255, .8);
 }
 
 .nav-footer ul {
@@ -107,4 +83,49 @@
     line-height: 2.2;
     position: relative;
     display: block;
+}
+
+@media (max-width: 650px) {
+    .content-section:last-of-type {
+        padding-bottom: 200px;
+    }
+    .nav-footer .container {
+        text-align: center;
+    }
+    .nav-footer .pull-left,
+    .nav-footer .pull-right {
+        padding: 0;
+        float: none !important;
+    }
+}
+
+#contact-btn {
+    cursor: pointer;
+}
+
+
+/* Modal */
+
+.modal-header h4,
+.modal-body label {
+    color: #000000;
+}
+
+
+/* Tab Menu */
+
+.nav-tabs > li {
+    float: none;
+    display: inline-block;
+}
+
+.nav-tabs > li > a {
+    float: none;
+    display: inline-block;
+    color: #fff;
+}
+
+#product .tab-content > .tab-pane > p:before,
+#product .tab-content > .tab-pane > p:after {
+    content: "\"";
 }
