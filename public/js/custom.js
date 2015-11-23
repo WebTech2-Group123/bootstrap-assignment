@@ -1,5 +1,11 @@
-// contact modal
+// close menu on click
+$(function () {
+    $('.navbar-collapse ul li:not(.dropdown) a').click(function () {
+        $('.navbar-toggle:visible').click();
+    });
+});
 
+// contact modal
 $(function () {
     var $contactModal = $('#contact-modal');
     var $sendMessage = $('#send-message');
