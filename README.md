@@ -5,4 +5,6 @@ Tasks:
  * [x] Tab Menus
  * [x] Bootstrap Carousel
  * [x] Fixed footer
- * [ ] Plugins
+ * [x] Plugins
+    * [x] Spy-scroll
+    * [x] Modal
