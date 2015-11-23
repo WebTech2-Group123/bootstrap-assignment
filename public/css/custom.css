@@ -86,7 +86,15 @@
     display: block;
 }
 
-@media (max-width: 450px) {
+@media screen and (max-width: 440px) {
+    .nav-footer .copyright {
+        display: none;
+    }
+}
+
+
+/*
+@media screen and (max-width: 300px) {
     .content-section:last-of-type {
         padding-bottom: 200px;
     }
@@ -102,6 +110,7 @@
         float: none !important;
     }
 }
+*/
 
 #contact-btn {
     cursor: pointer;
