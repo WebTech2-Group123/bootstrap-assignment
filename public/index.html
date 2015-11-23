@@ -37,6 +37,8 @@
 
 </head>
 
+<!-- TASK 5 - plugins: spy-scroll -->
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- TASK 1 - navbar + search box + submenu -->
@@ -252,7 +254,7 @@
             </ul>
 
             <ul class="pull-left">
-                <li><a id="contact-btn" data-toggle="modal" data-target="#contactModal">Contact</a></li>
+                <li><a id="contact-btn" data-toggle="modal" data-target="#contact-modal">Contact</a></li>
                 <li><span>Copyright © 2015 - Lorem Ipsum</span></li>
             </ul>
 
@@ -260,7 +262,7 @@
     </footer>
 
     <!-- Modal -->
-    <div id="contactModal" class="modal fade" role="dialog">
+    <div id="contact-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -293,7 +295,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary" data-dismiss="modal">Send</button>
+                    <button type="submit" class="btn btn-primary" id="send-message">Send</button>
+                    <button type="submit" class="btn btn-primary hidden" id="sending-message"><i class="fa fa-spinner fa-pulse"></i> Sending...</button>
                 </div>
             </div>
         </div>
@@ -304,6 +307,33 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/grayscale.js"></script>
+
+    <script>
+        $(function () {
+            var $contactModal = $('#contact-modal');
+            var $sendMessage = $('#send-message');
+            var $sendingMessage = $('#sending-message');
+
+            $sendMessage.on('click', function () {
+
+                // show loading
+                $sendMessage.hide();
+                $sendingMessage.removeClass('hidden');
+
+                // "message sent"
+                setTimeout(function () {
+                    $contactModal.modal('hide');
+                    $contactModal.find('form')[0].reset();
+                }, 2500);
+            });
+
+            // show again send button
+            $contactModal.on('hidden.bs.modal', function () {
+                $sendMessage.show();
+                $sendingMessage.addClass('hidden');
+            });
+        });
+    </script>
 
     <!-- decomment for production (CDN) -->
     <!--
