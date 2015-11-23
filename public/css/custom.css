@@ -85,7 +85,7 @@
     display: block;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
     .content-section:last-of-type {
         padding-bottom: 200px;
     }
@@ -123,6 +123,10 @@
     float: none;
     display: inline-block;
     color: #fff;
+}
+
+#product .tab-content > .tab-pane > p {
+    padding: 10px;
 }
 
 #product .tab-content > .tab-pane > p:before,
